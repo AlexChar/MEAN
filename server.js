@@ -1,4 +1,8 @@
-"use strict";
+// Invoke 'strict' JavaScript mode
+'use strict';
+
+// Set the 'NODE_ENV' variable
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Load the 'express' module
 var express = require('./config/express');

@@ -1,21 +1,14 @@
 "use strict";
 
-var express = require('express');
+exports.render = function(req, res) {
 
-var hasName = function(req, res, next) {
-	if(req.param('name')) {
-		next();
-	} else {
-		res.send('What is your name?');
+	if(req.session.lastVisit) {
+		console.log(req.session.lastVisit);
 	}
+
+	req.session.lastVisit = new Date();
+
+	res.render('index', {
+		title: 'Hello World'
+	});
 };
-
-var sayHello = function(req, res, next) {
-	res.send('Hello ' + req.param('name'));
-}
-
-var app = express();
-app.get('/', hasName, sayHello);
-
-app.listen(3000);
-console.log('Server running at http://localhost:3000');
