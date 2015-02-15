@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json MEAN@0.0.3 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'C:\\Users\\Alexandros\\Documents\\GitHub\\mean',
+7 verbose install   [ 'express',
+7 verbose install     'morgan',
+7 verbose install     'compression',
+7 verbose install     'body-parser',
+7 verbose install     'method-override',
+7 verbose install     'express-session',
+7 verbose install     'ejs',
+7 verbose install     'moongoose' ] ]
+8 info preinstall MEAN@0.0.3
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping express@~4.8.8 C:\Users\Alexandros\Documents\GitHub\mean
+11 verbose already installed skipping morgan@~1.3.0 C:\Users\Alexandros\Documents\GitHub\mean
+12 verbose already installed skipping compression@~1.0.11 C:\Users\Alexandros\Documents\GitHub\mean
+13 verbose already installed skipping body-parser@~1.8.0 C:\Users\Alexandros\Documents\GitHub\mean
+14 verbose already installed skipping method-override@~2.2.0 C:\Users\Alexandros\Documents\GitHub\mean
+15 verbose already installed skipping express-session@~1.7.6 C:\Users\Alexandros\Documents\GitHub\mean
+16 verbose already installed skipping ejs@~1.0.0 C:\Users\Alexandros\Documents\GitHub\mean
+17 verbose cache add [ 'moongoose@~3.8.15', null ]
+18 verbose cache add name=undefined spec="moongoose@~3.8.15" args=["moongoose@~3.8.15",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'moongoose@~3.8.15',
+19 verbose parsed url   path: 'moongoose@~3.8.15',
+19 verbose parsed url   href: 'moongoose@~3.8.15' }
+20 verbose cache add name="moongoose" spec="~3.8.15" args=["moongoose","~3.8.15"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '~3.8.15',
+21 verbose parsed url   path: '~3.8.15',
+21 verbose parsed url   href: '~3.8.15' }
+22 verbose addNamed [ 'moongoose', '~3.8.15' ]
+23 verbose addNamed [ null, '>=3.8.15-0 <3.9.0-0' ]
+24 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
+25 verbose lock moongoose@~3.8.15 C:\Users\Alexandros\AppData\Roaming\npm-cache\10972b88-moongoose-3-8-15.lock
+26 silly addNameRange { name: 'moongoose',
+26 silly addNameRange   range: '>=3.8.15-0 <3.9.0-0',
+26 silly addNameRange   hasData: false }
+27 verbose request where is /moongoose
+28 verbose request registry https://registry.npmjs.org/
+29 verbose request id 0e0d88cc787b52bb
+30 verbose url raw /moongoose
+31 verbose url resolving [ 'https://registry.npmjs.org/', './moongoose' ]
+32 verbose url resolved https://registry.npmjs.org/moongoose
+33 verbose request where is https://registry.npmjs.org/moongoose
+34 info trying registry request attempt 1 at 22:24:09
+35 http GET https://registry.npmjs.org/moongoose
+36 http 404 https://registry.npmjs.org/moongoose
+37 verbose headers { date: 'Sun, 15 Feb 2015 20:24:10 GMT',
+37 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=0',
+37 verbose headers   'content-length': '52',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   age: '0',
+37 verbose headers   'x-served-by': 'cache-ams4141-AMS',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1424031849.934918,VS0,VE396',
+37 verbose headers   'keep-alive': 'timeout=10, max=50',
+37 verbose headers   connection: 'Keep-Alive' }
+38 silly registry.get cb [ 404,
+38 silly registry.get   { date: 'Sun, 15 Feb 2015 20:24:10 GMT',
+38 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+38 silly registry.get     'content-type': 'application/json',
+38 silly registry.get     'cache-control': 'max-age=0',
+38 silly registry.get     'content-length': '52',
+38 silly registry.get     'accept-ranges': 'bytes',
+38 silly registry.get     via: '1.1 varnish',
+38 silly registry.get     age: '0',
+38 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+38 silly registry.get     'x-cache': 'MISS',
+38 silly registry.get     'x-cache-hits': '0',
+38 silly registry.get     'x-timer': 'S1424031849.934918,VS0,VE396',
+38 silly registry.get     'keep-alive': 'timeout=10, max=50',
+38 silly registry.get     connection: 'Keep-Alive' } ]
+39 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
+40 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
+41 error 404 404 Not Found: moongoose
+41 error 404
+41 error 404 'moongoose' is not in the npm registry.
+41 error 404 You should bug the author to publish it
+41 error 404 It was specified as a dependency of 'MEAN'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, or http url, or git url.
+42 error System Windows_NT 6.1.7601
+43 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+44 error cwd C:\Users\Alexandros\Documents\GitHub\mean
+45 error node -v v0.10.32
+46 error npm -v 1.4.28
+47 error code E404
+48 verbose exit [ 1, true ]
