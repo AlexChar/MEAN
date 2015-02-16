@@ -33,3 +33,28 @@ exports.list = function(req, res, next) {
 		}
 	});
 };
+
+// Create a new 'read' controller method
+exports.read = function(req, res) {
+	// Use the 'response' object to send a JSON response
+	res.json(req.user);
+};
+
+// Create a new 'userByID' controller method
+exports.userByID = function(req, res, next, id) {
+	// Use the 'User' static 'findOne' method to retrieve a specific user
+	User.findOne({
+		_id: id
+	}, function(err, user) {
+		if (err) {
+			// Call the next middleware with an error message
+			return next(err);
+		} else {
+			// Set the 'req.user' property
+			req.user = user;
+
+			// Call the next middleware
+			next();
+		}
+	});
+};
