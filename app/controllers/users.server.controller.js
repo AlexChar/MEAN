@@ -19,3 +19,17 @@ exports.create = function(req, res, next) {
 		}
 	});
 };
+
+// Create a new 'list' controller method
+exports.list = function(req, res, next) {
+	// Use the 'User' static 'find' method to retrieve the list of users
+	User.find({}, function(err, users) {
+		if (err) {
+			// Call the next middleware with an error message
+			return next(err);
+		} else {
+			// Use the 'response' object to send a JSON response
+			res.json(users);
+		}
+	});
+};
