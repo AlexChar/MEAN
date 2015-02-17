@@ -11,7 +11,8 @@ module.exports = function(app) {
 		.get(users.list);
 
 	app.route('/users/:userId')
-		.get(users.read);
+		.get(users.read)
+		.put(users.update)
 
 	// Set up the 'userId' parameter middleware
 	app.param('userId', users.userByID);

@@ -40,6 +40,20 @@ exports.read = function(req, res) {
 	res.json(req.user);
 };
 
+// Create a new 'update' controller method
+exports.update = function(req, res, next) {
+	// Use the 'User' static 'findByIdAndUpdate' method to update a specific user
+	User.findByIdAndUpdate(req.user.id, req.body, function(err, user) {
+		if (err) {
+			// Call the next middleware with an error message
+			return next(err);
+		} else {
+			// Use the 'response' object to send a JSON response
+			res.json(user);
+		}
+	})
+};
+
 // Create a new 'userByID' controller method
 exports.userByID = function(req, res, next, id) {
 	// Use the 'User' static 'findOne' method to retrieve a specific user
@@ -52,7 +66,6 @@ exports.userByID = function(req, res, next, id) {
 		} else {
 			// Set the 'req.user' property
 			req.user = user;
-
 			// Call the next middleware
 			next();
 		}
