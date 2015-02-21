@@ -15,7 +15,10 @@
 7 verbose install     'method-override',
 7 verbose install     'express-session',
 7 verbose install     'ejs',
-7 verbose install     'moongoose' ] ]
+7 verbose install     'connect-flah',
+7 verbose install     'mongoose',
+7 verbose install     'passport',
+7 verbose install     'passport-local' ] ]
 8 info preinstall MEAN@0.0.3
 9 verbose readDependencies using package.json deps
 10 verbose already installed skipping express@~4.8.8 C:\Users\Alexandros\Documents\GitHub\mean
@@ -25,8 +28,8 @@
 14 verbose already installed skipping method-override@~2.2.0 C:\Users\Alexandros\Documents\GitHub\mean
 15 verbose already installed skipping express-session@~1.7.6 C:\Users\Alexandros\Documents\GitHub\mean
 16 verbose already installed skipping ejs@~1.0.0 C:\Users\Alexandros\Documents\GitHub\mean
-17 verbose cache add [ 'moongoose@~3.8.15', null ]
-18 verbose cache add name=undefined spec="moongoose@~3.8.15" args=["moongoose@~3.8.15",null]
+17 verbose cache add [ 'connect-flah@~0.1.1', null ]
+18 verbose cache add name=undefined spec="connect-flah@~0.1.1" args=["connect-flah@~0.1.1",null]
 19 verbose parsed url { protocol: null,
 19 verbose parsed url   slashes: null,
 19 verbose parsed url   auth: null,
@@ -36,82 +39,85 @@
 19 verbose parsed url   hash: null,
 19 verbose parsed url   search: null,
 19 verbose parsed url   query: null,
-19 verbose parsed url   pathname: 'moongoose@~3.8.15',
-19 verbose parsed url   path: 'moongoose@~3.8.15',
-19 verbose parsed url   href: 'moongoose@~3.8.15' }
-20 verbose cache add name="moongoose" spec="~3.8.15" args=["moongoose","~3.8.15"]
-21 verbose parsed url { protocol: null,
-21 verbose parsed url   slashes: null,
-21 verbose parsed url   auth: null,
-21 verbose parsed url   host: null,
-21 verbose parsed url   port: null,
-21 verbose parsed url   hostname: null,
-21 verbose parsed url   hash: null,
-21 verbose parsed url   search: null,
-21 verbose parsed url   query: null,
-21 verbose parsed url   pathname: '~3.8.15',
-21 verbose parsed url   path: '~3.8.15',
-21 verbose parsed url   href: '~3.8.15' }
-22 verbose addNamed [ 'moongoose', '~3.8.15' ]
-23 verbose addNamed [ null, '>=3.8.15-0 <3.9.0-0' ]
-24 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
-25 verbose lock moongoose@~3.8.15 C:\Users\Alexandros\AppData\Roaming\npm-cache\10972b88-moongoose-3-8-15.lock
-26 silly addNameRange { name: 'moongoose',
-26 silly addNameRange   range: '>=3.8.15-0 <3.9.0-0',
-26 silly addNameRange   hasData: false }
-27 verbose request where is /moongoose
-28 verbose request registry https://registry.npmjs.org/
-29 verbose request id 0e0d88cc787b52bb
-30 verbose url raw /moongoose
-31 verbose url resolving [ 'https://registry.npmjs.org/', './moongoose' ]
-32 verbose url resolved https://registry.npmjs.org/moongoose
-33 verbose request where is https://registry.npmjs.org/moongoose
-34 info trying registry request attempt 1 at 22:24:09
-35 http GET https://registry.npmjs.org/moongoose
-36 http 404 https://registry.npmjs.org/moongoose
-37 verbose headers { date: 'Sun, 15 Feb 2015 20:24:10 GMT',
-37 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-37 verbose headers   'content-type': 'application/json',
-37 verbose headers   'cache-control': 'max-age=0',
-37 verbose headers   'content-length': '52',
-37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   via: '1.1 varnish',
-37 verbose headers   age: '0',
-37 verbose headers   'x-served-by': 'cache-ams4141-AMS',
-37 verbose headers   'x-cache': 'MISS',
-37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1424031849.934918,VS0,VE396',
-37 verbose headers   'keep-alive': 'timeout=10, max=50',
-37 verbose headers   connection: 'Keep-Alive' }
-38 silly registry.get cb [ 404,
-38 silly registry.get   { date: 'Sun, 15 Feb 2015 20:24:10 GMT',
-38 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-38 silly registry.get     'content-type': 'application/json',
-38 silly registry.get     'cache-control': 'max-age=0',
-38 silly registry.get     'content-length': '52',
-38 silly registry.get     'accept-ranges': 'bytes',
-38 silly registry.get     via: '1.1 varnish',
-38 silly registry.get     age: '0',
-38 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
-38 silly registry.get     'x-cache': 'MISS',
-38 silly registry.get     'x-cache-hits': '0',
-38 silly registry.get     'x-timer': 'S1424031849.934918,VS0,VE396',
-38 silly registry.get     'keep-alive': 'timeout=10, max=50',
-38 silly registry.get     connection: 'Keep-Alive' } ]
-39 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
-40 silly lockFile 10972b88-moongoose-3-8-15 moongoose@~3.8.15
-41 error 404 404 Not Found: moongoose
-41 error 404
-41 error 404 'moongoose' is not in the npm registry.
-41 error 404 You should bug the author to publish it
-41 error 404 It was specified as a dependency of 'MEAN'
-41 error 404
-41 error 404 Note that you can also install from a
-41 error 404 tarball, folder, or http url, or git url.
-42 error System Windows_NT 6.1.7601
-43 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
-44 error cwd C:\Users\Alexandros\Documents\GitHub\mean
-45 error node -v v0.10.32
-46 error npm -v 1.4.28
-47 error code E404
-48 verbose exit [ 1, true ]
+19 verbose parsed url   pathname: 'connect-flah@~0.1.1',
+19 verbose parsed url   path: 'connect-flah@~0.1.1',
+19 verbose parsed url   href: 'connect-flah@~0.1.1' }
+20 verbose already installed skipping mongoose@~3.8.15 C:\Users\Alexandros\Documents\GitHub\mean
+21 verbose already installed skipping passport@~0.2.1 C:\Users\Alexandros\Documents\GitHub\mean
+22 verbose already installed skipping passport-local@~1.0.0 C:\Users\Alexandros\Documents\GitHub\mean
+23 verbose cache add name="connect-flah" spec="~0.1.1" args=["connect-flah","~0.1.1"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '~0.1.1',
+24 verbose parsed url   path: '~0.1.1',
+24 verbose parsed url   href: '~0.1.1' }
+25 verbose addNamed [ 'connect-flah', '~0.1.1' ]
+26 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+27 silly lockFile 8052c165-connect-flah-0-1-1 connect-flah@~0.1.1
+28 verbose lock connect-flah@~0.1.1 C:\Users\Alexandros\AppData\Roaming\npm-cache\8052c165-connect-flah-0-1-1.lock
+29 silly addNameRange { name: 'connect-flah',
+29 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+29 silly addNameRange   hasData: false }
+30 verbose request where is /connect-flah
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id ccd3a45335b95429
+33 verbose url raw /connect-flah
+34 verbose url resolving [ 'https://registry.npmjs.org/', './connect-flah' ]
+35 verbose url resolved https://registry.npmjs.org/connect-flah
+36 verbose request where is https://registry.npmjs.org/connect-flah
+37 info trying registry request attempt 1 at 20:20:19
+38 http GET https://registry.npmjs.org/connect-flah
+39 http 404 https://registry.npmjs.org/connect-flah
+40 verbose headers { date: 'Sat, 21 Feb 2015 18:20:26 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=0',
+40 verbose headers   'content-length': '52',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '0',
+40 verbose headers   'x-served-by': 'cache-ams4124-AMS',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1424542826.500460,VS0,VE93',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 silly registry.get cb [ 404,
+41 silly registry.get   { date: 'Sat, 21 Feb 2015 18:20:26 GMT',
+41 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 silly registry.get     'content-type': 'application/json',
+41 silly registry.get     'cache-control': 'max-age=0',
+41 silly registry.get     'content-length': '52',
+41 silly registry.get     'accept-ranges': 'bytes',
+41 silly registry.get     via: '1.1 varnish',
+41 silly registry.get     age: '0',
+41 silly registry.get     'x-served-by': 'cache-ams4124-AMS',
+41 silly registry.get     'x-cache': 'MISS',
+41 silly registry.get     'x-cache-hits': '0',
+41 silly registry.get     'x-timer': 'S1424542826.500460,VS0,VE93',
+41 silly registry.get     'keep-alive': 'timeout=10, max=50',
+41 silly registry.get     connection: 'Keep-Alive' } ]
+42 silly lockFile 8052c165-connect-flah-0-1-1 connect-flah@~0.1.1
+43 silly lockFile 8052c165-connect-flah-0-1-1 connect-flah@~0.1.1
+44 error 404 404 Not Found: connect-flah
+44 error 404
+44 error 404 'connect-flah' is not in the npm registry.
+44 error 404 You should bug the author to publish it
+44 error 404 It was specified as a dependency of 'MEAN'
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, or http url, or git url.
+45 error System Windows_NT 6.1.7601
+46 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+47 error cwd C:\Users\Alexandros\Documents\GitHub\mean
+48 error node -v v0.10.32
+49 error npm -v 1.4.28
+50 error code E404
+51 verbose exit [ 1, true ]
