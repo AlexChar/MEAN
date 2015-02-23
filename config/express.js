@@ -76,4 +76,4 @@ module.exports = function(db) {
 
 	// Return the Express application instance
 	return server;
-}
+};
