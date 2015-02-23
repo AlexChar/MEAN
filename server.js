@@ -13,7 +13,7 @@ var mongoose = require('./config/mongoose'),
 var db = mongoose();
 
 // Create a new Express application instance
-var app = express();
+var app = express(db);
 
 // Configure the Passport middleware
 var passport = passport();
