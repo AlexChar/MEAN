@@ -71,6 +71,9 @@ module.exports = function(db) {
 	// Configure static file serving
 	app.use(express.static('./public'));
 
+	// Load the Socket.io configuration
+	require('./socketio')(server, io, mongoStore);
+
 	// Return the Express application instance
 	return server;
 }
